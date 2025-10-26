@@ -1,0 +1,178 @@
+/* 🌿 Tema Aplikasi Kontrol Camat Dumai Kota */
+/* Warna utama: hijau tua (#14532d) dan putih */
+
+/* Reset dasar */
+body, h1, h2, h3, p, form, input, button {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+/* === LOGIN PAGE === */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #d1fae5, #f0fdf4);
+}
+
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+}
+
+.login-container .logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.login-container .title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 1rem;
+}
+
+#loginForm input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+#loginForm input:focus {
+  border-color: #16a34a;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+}
+
+#loginForm button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #14532d;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#loginForm button:hover {
+  background-color: #166534;
+}
+
+#errorMessage {
+  color: #dc2626;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.login-container footer {
+  margin-top: 1rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+/* === PORTAL PAGE === */
+.portal-body {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to bottom, #ecfdf5, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portal-header .logo {
+  width: 100px;
+  margin-top: 1rem;
+}
+
+.portal-title {
+  color: #14532d;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.subtitle {
+  color: #4b5563;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.info-box {
+  background: #f9fafb;
+  border: 1px solid #d1d5db;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 90%;
+  max-width: 420px;
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+  max-width: 420px;
+  width: 90%;
+}
+
+.menu-btn {
+  padding: 1rem;
+  background-color: #15803d;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.menu-btn:hover {
+  background-color: #166534;
+  transform: scale(1.03);
+}
+
+.logout-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #b91c1c;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem 0;
+  font-size: 0.75rem;
+  color: #6b7280;
+}

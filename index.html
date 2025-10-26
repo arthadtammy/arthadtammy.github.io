@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal - Aplikasi Camat Dumai Kota</title>
+  <link rel="icon" type="image/png" href="assets/Lambang_Kota_Dumai.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="portal-body">
+  <header class="portal-header">
+    <img src="assets/Lambang_Kota_Dumai.png" alt="Logo Pemko Dumai" class="logo" />
+    <h1 class="portal-title">Aplikasi Kontrol Manajemen Camat Dumai Kota</h1>
+    <p class="subtitle">Portal Internal Kecamatan Dumai Kota</p>
+  </header>
+
+  <main>
+    <div class="info-box">
+      <p id="tanggal"></p>
+      <p id="waktu"></p>
+      <p id="ip"></p>
+      <p id="device"></p>
+    </div>
+
+    <div class="button-grid">
+      <button class="menu-btn" onclick="alert('Modul Disposisi akan ditambahkan 👷‍♂️')">📨 Disposisi Surat</button>
+      <button class="menu-btn" onclick="alert('Modul Agenda akan ditambahkan 📅')">📅 Agenda Harian</button>
+    </div>
+
+    <button id="logoutBtn" class="logout-btn">🚪 Keluar</button>
+  </main>
+
+  <footer>
+    © 2025 Pemerintah Kota Dumai — Kecamatan Dumai Kota
+  </footer>
+
+  <script src="js/portal.js"></script>
+</body>
+</html>
