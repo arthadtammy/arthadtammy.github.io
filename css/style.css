@@ -176,3 +176,12 @@ footer {
   font-size: 0.75rem;
   color: #6b7280;
 }
+
+/* === Sambutan User === */
+.welcome-text {
+  color: #14532d;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  text-align: center;
+}

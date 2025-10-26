@@ -9,6 +9,21 @@ const tanggalEl = document.getElementById("tanggal");
 const waktuEl = document.getElementById("waktu");
 const ipEl = document.getElementById("ip");
 const deviceEl = document.getElementById("device");
+const welcomeEl = document.getElementById("welcome");
+
+// ✅ Peta username ke nama/jabatan resmi
+const userMap = {
+  "cdk": "Tammy Arthadinata, S.STP,M.Si",
+  "camat": "Camat Dumai Kota",
+  "sekcam": "Sekretaris Kecamatan Dumai Kota",
+  "subagtu": "Sub Bagian Tata Usaha Dumai Kota"
+};
+
+// Tampilkan sambutan sesuai user
+if (user && welcomeEl) {
+  const displayName = userMap[user] || user;
+  welcomeEl.textContent = `👋 Selamat datang, ${displayName}`;
+}
 
 // Format tanggal dan waktu Indonesia
 function updateDateTime() {
