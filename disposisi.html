@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disposisi Surat - Kecamatan Dumai Kota</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      background-color: #f9fafb;
+      font-family: "Segoe UI", Arial, sans-serif;
+      padding: 2rem;
+      color: #1f2937;
+    }
+
+    .disposisi-container {
+      background: white;
+      border-radius: 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .disposisi-header {
+      text-align: center;
+      border-bottom: 2px solid #166534;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .disposisi-header img {
+      width: 80px;
+      height: auto;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-size: 1.3rem;
+      color: #14532d;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      color: #166534;
+      border-left: 5px solid #16a34a;
+      padding-left: 0.5rem;
+      margin-top: 1.5rem;
+    }
+
+    label {
+      font-weight: 600;
+      margin-top: 1rem;
+      display: block;
+      color: #374151;
+    }
+
+    input[type="text"], input[type="date"], textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .checkbox-group label {
+      font-weight: 400;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+    }
+
+    button {
+      padding: 0.6rem 1.2rem;
+      background-color: #15803d;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background-color: #166534;
+    }
+
+    .back-btn {
+      background-color: #6b7280;
+    }
+
+    .back-btn:hover {
+      background-color: #4b5563;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="disposisi-container">
+    <div class="disposisi-header">
+      <img src="assets/Lambang_Kota_Dumai.png" alt="Logo Pemko Dumai" />
+      <h1>PEMERINTAH KOTA DUMAI</h1>
+      <h1>KECAMATAN DUMAI KOTA</h1>
+      <p><strong>LEMBAR DISPOSISI SURAT</strong></p>
+    </div>
+
+    <!-- Bagian A -->
+    <h2>A. Data Surat Asal</h2>
+    <label>Nomor Surat</label>
+    <input type="text" id="nomorSurat" />
+
+    <label>Tanggal Surat</label>
+    <input type="date" id="tanggalSurat" />
+
+    <label>Asal Surat</label>
+    <input type="text" id="asalSurat" />
+
+    <label>Perihal Surat</label>
+    <input type="text" id="perihalSurat" />
+
+    <!-- Bagian B -->
+    <h2>B. Data Penerimaan Surat</h2>
+    <label>Tanggal Diterima</label>
+    <input type="date" id="tanggalDiterima" />
+
+    <label>Nomor Agenda</label>
+    <input type="text" id="nomorAgenda" />
+
+    <!-- Bagian C -->
+    <h2>C. Arahan / Instruksi Pimpinan</h2>
+    <label>Isi Disposisi</label>
+    <textarea id="isiDisposisi"></textarea>
+
+    <label>Tujuan Disposisi</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" value="Sekcam"> Sekcam</label>
+      <label><input type="checkbox" value="Subbag TU"> Subbag TU</label>
+      <label><input type="checkbox" value="Lurah Dumai Kota"> Lurah Dumai Kota</label>
+    </div>
+
+    <label>Sifat Disposisi</label>
+    <div class="checkbox-group">
+      <label><input type="radio" name="sifat" value="Biasa"> Biasa</label>
+      <label><input type="radio" name="sifat" value="Segera"> Segera</label>
+      <label><input type="radio" name="sifat" value="Sangat Segera"> Sangat Segera</label>
+    </div>
+
+    <label>Tanggal Disposisi</label>
+    <input type="date" id="tanggalDisposisi" />
+
+    <div class="button-row">
+      <button class="back-btn" onclick="window.location.href='index.html'">← Kembali</button>
+      <button onclick="alert('Fungsi cetak PDF segera ditambahkan 📄')">Cetak PDF</button>
+    </div>
+  </div>
+</body>
+</html>

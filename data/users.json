@@ -2,6 +2,7 @@
   { "username": "cdk", "password": "iconmantap", "role": "camat", "nama": "Camat Dumai Kota" },
   { "username": "sekcam", "password": "dumkotinti", "role": "sekcam", "nama": "Sekretaris Kecamatan Dumai Kota" },
   { "username": "subagtu", "password": "dumkotinti", "role": "subagtu", "nama": "Sub Bagian Tata Usaha Dumai Kota" },
+  { "username": "admin", "password": "dumkotinti", "role": "admin", "nama": "Administrator Kecamatan Dumai Kota" },
   { "username": "subagprogram", "password": "dumkotidaman", "role": "subagprogram", "nama": "Sub Bagian Program Dumai Kota" },
   { "username": "kasipem", "password": "dumkotidaman", "role": "kasipem", "nama": "Kasi Pemerintahan" },
   { "username": "kasikesos", "password": "dumkotidaman", "role": "kasikesos", "nama": "Kasi Kesejahteraan Sosial" },
