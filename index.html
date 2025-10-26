@@ -9,14 +9,23 @@
 <body>
   <header>
     <img src="assets/Lambang_Kota_Dumai.png" class="logo-small" alt="Logo" />
-    <h1>Portal Aplikasi Manajemen Kontrol Intenal Camat Dumai Kota</h1>
+    <h1>Portal Aplikasi Camat Dumai Kota</h1>
   </header>
 
   <main class="portal">
-    <h2 id="userNama"></h2>
-    <p>Role: <span id="userRole"></span></p>
+    <h2 id="welcomeText"></h2>
+    <p id="userRoleInfo"></p>
+
+    <div class="menu-box">
+      <h3>📂 Modul Utama</h3>
+      <div class="menu-links">
+        <a href="disposisi.html" class="menu-link">📄 Disposisi Surat</a>
+        <a href="agenda.html" class="menu-link">🗓️ Agenda Harian</a>
+      </div>
+    </div>
 
     <div class="info-box">
+      <h3>ℹ️ Informasi Sistem</h3>
       <p>🕒 Waktu: <span id="clock"></span></p>
       <p>🌐 IP: <span id="ip">Memuat...</span></p>
       <p>💻 Perangkat: <span id="device"></span></p>
@@ -24,6 +33,10 @@
 
     <button onclick="logout()" class="logout-btn">Keluar</button>
   </main>
+
+  <footer>
+    <p>© 2025 Camat Dumai Kota</p>
+  </footer>
 
   <script src="js/portal.js"></script>
 </body>
