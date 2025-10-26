@@ -1,42 +1,30 @@
-// Fungsi untuk hashing password jadi SHA-256
-async function hashPassword(password) {
-  const encoder = new TextEncoder();
-  const data = encoder.encode(password);
-  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+async function sha256(message) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
   const hashArray = Array.from(new Uint8Array(hashBuffer));
   return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
 }
 
-// Tangkap form login
-document.getElementById("loginForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
+async function handleLogin(event) {
+  event.preventDefault();
 
   const username = document.getElementById("username").value.trim();
-  const password = document.getElementById("password").value;
-  const errorMessage = document.getElementById("errorMessage");
+  const password = document.getElementById("password").value.trim();
 
-  try {
-    // Ambil data users.json
-    const res = await fetch("data/users.json");
-    const users = await res.json();
+  const response = await fetch("data/users.json");
+  const users = await response.json();
 
-    // Hash password input
-    const hashed = await hashPassword(password);
+  const hashPassword = await sha256(password);
+  const found = users.find(
+    (u) => u.username === username && u.password === hashPassword
+  );
 
-    // Cek apakah username dan hash password cocok
-    const found = users.find(
-      (u) => u.username === username && u.password === hashed
-    );
-
-    if (found) {
-      // Simpan sesi login
-      localStorage.setItem("loggedUser", username);
-      window.location.href = "index.html"; // pindah ke portal utama
-    } else {
-      errorMessage.textContent = "❌ Username atau password salah!";
-    }
-  } catch (error) {
-    console.error("Gagal memproses login:", error);
-    errorMessage.textContent = "⚠️ Tidak dapat mengakses data pengguna.";
+  if (!found) {
+    alert("⚠️ Username atau password salah.");
+    return;
   }
-});
+
+  localStorage.setItem("user", JSON.stringify(found));
+  alert(`Selamat datang, ${found.nama}`);
+  window.location.href = "index.html";
+}

@@ -1,18 +1,16 @@
 [
-  {
-    "username": "cdk",
-    "password": "38bb62fd7143c8f0ccac1c4bd828f72b7227cc89ac71224d4fa8fcc3abdd603d"
-  },
-  {
-    "username": "camat",
-    "password": "a2a493dac9fb31bb5ab83cc3997294bfa478f27e41192532328add880d84bb87"
-  },
-  {
-    "username": "sekcam",
-    "password": "a2a493dac9fb31bb5ab83cc3997294bfa478f27e41192532328add880d84bb87"
-  },
-  {
-    "username": "subagtu",
-    "password": "a2a493dac9fb31bb5ab83cc3997294bfa478f27e41192532328add880d84bb87"
-  }
+  { "username": "cdk", "password": "cbb4c963d3d24ddffb015b9ee9a3c51a30dc6b9296b79f85eebd061e1e77da68", "role": "camat", "nama": "Camat Dumai Kota" },
+  { "username": "sekcam", "password": "5cc7faee5c8b1dbcd1ad07aebc20429b91f804bc923e7d1066e2f0b787fc8d1d", "role": "sekcam", "nama": "Sekretaris Kecamatan Dumai Kota" },
+  { "username": "subagtu", "password": "5cc7faee5c8b1dbcd1ad07aebc20429b91f804bc923e7d1066e2f0b787fc8d1d", "role": "subagtu", "nama": "Sub Bagian Tata Usaha Dumai Kota" },
+  { "username": "subagprogram", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "subagprogram", "nama": "Sub Bagian Program Dumai Kota" },
+  { "username": "kasipem", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "kasipem", "nama": "Kasi Pemerintahan" },
+  { "username": "kasikesos", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "kasikesos", "nama": "Kasi Kesejahteraan Sosial" },
+  { "username": "kasiekbang", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "kasiekbang", "nama": "Kasi Ekonomi & Pembangunan" },
+  { "username": "kasitrantib", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "kasitrantib", "nama": "Kasi Ketertiban & Ketentraman" },
+  { "username": "kasipm", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "kasipm", "nama": "Kasi Pemberdayaan Masyarakat" },
+  { "username": "lurah_sukajadi", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "lurah", "wilayah": "Sukajadi", "nama": "Lurah Sukajadi" },
+  { "username": "lurah_bintan", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "lurah", "wilayah": "Bintan", "nama": "Lurah Bintan" },
+  { "username": "lurah_rimbas", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "lurah", "wilayah": "Rimba Sekampung", "nama": "Lurah Rimba Sekampung" },
+  { "username": "lurah_laksamana", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "lurah", "wilayah": "Laksamana", "nama": "Lurah Laksamana" },
+  { "username": "lurah_dukot", "password": "178cfb0a1a9f55831956eeb8e55e2b1c2382dbe2973ff8100814d4cb44ac0e13", "role": "lurah", "wilayah": "Dumai Kota", "nama": "Lurah Dumai Kota" }
 ]

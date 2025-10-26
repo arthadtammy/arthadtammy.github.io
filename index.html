@@ -3,40 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portal - Aplikasi Camat Dumai Kota</title>
-  <link rel="icon" type="image/png" href="assets/Lambang_Kota_Dumai.png" />
+  <title>Portal Camat Dumai Kota</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
-<body class="portal-body">
-  <header class="portal-header">
-    <img src="assets/Lambang_Kota_Dumai.png" alt="Logo Pemko Dumai" class="logo" />
-    <h1 class="portal-title">Aplikasi Kontrol Manajemen Camat Dumai Kota</h1>
-    <p class="subtitle">Portal Internal Kecamatan Dumai Kota</p>
+<body>
+  <header>
+    <img src="assets/Lambang_Kota_Dumai.png" class="logo-small" alt="Logo" />
+    <h1>Portal Aplikasi Manajemen Kontrol Intenal Camat Dumai Kota</h1>
   </header>
 
-  <main>
-    <!-- ✅ Tambahan sambutan user -->
-    <h2 id="welcome" class="welcome-text"></h2>
+  <main class="portal">
+    <h2 id="userNama"></h2>
+    <p>Role: <span id="userRole"></span></p>
 
     <div class="info-box">
-      <p id="tanggal"></p>
-      <p id="waktu"></p>
-      <p id="ip"></p>
-      <p id="device"></p>
+      <p>🕒 Waktu: <span id="clock"></span></p>
+      <p>🌐 IP: <span id="ip">Memuat...</span></p>
+      <p>💻 Perangkat: <span id="device"></span></p>
     </div>
 
-    <div class="button-grid">
-      <button class="menu-btn" onclick="alert('Modul Disposisi akan ditambahkan 👷‍♂️')">📨 Disposisi Surat</button>
-      <button class="menu-btn" onclick="alert('Modul Agenda akan ditambahkan 📅')">📅 Agenda Harian</button>
-    </div>
-
-    <button id="logoutBtn" class="logout-btn">🚪 Keluar</button>
+    <button onclick="logout()" class="logout-btn">Keluar</button>
   </main>
-
-  <footer>
-    © 2025 Pemerintah Kota Dumai — Kecamatan Dumai Kota
-  </footer>
 
   <script src="js/portal.js"></script>
 </body>
